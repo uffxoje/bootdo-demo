@@ -10,6 +10,7 @@
 4，改READM.md
 5，改favicon.ico
 6，改login.html,main.html,index_v1.html
+7，login.html不要自动记住帐号和密码
 
 
 
