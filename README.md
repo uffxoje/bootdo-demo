@@ -3,8 +3,13 @@
 
 把此项目复制过去，然后要改的地方如下：
 
-
-
+0，改pom.xml中<groupId><artifactId><version>
+1，改application的包名
+2，application类的组件扫描路径，Mybatis的mapper的包扫描路径，启动Logo字符
+3，改application.yml,application-dev.yml里mybatis: typeAliasesPackage:
+4，改READMmd
+5，改favicon.ico
+6，改login.html,main.html,index_v1.html
 
 
 
