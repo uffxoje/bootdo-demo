@@ -1,4 +1,15 @@
 # BootDo 面向学习型的开源框架
+已经被封装为核心包作为此项目的依赖，此项目为BootDo-core项目的使用演示。
+
+把此项目复制过去，然后要改的地方如下：
+
+
+
+
+
+
+
+
 
 ## 平台简介
 三群:<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5rB9i8M"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="BootDo交流群" title="BootDo交流群"></a>

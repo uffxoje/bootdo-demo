@@ -5,7 +5,7 @@
 
     <groupId>com.bootdo</groupId>
     <artifactId>bootdo-demo</artifactId>
-    <version>1.6.9</version>
+    <version>1.7.0</version>
     <packaging>jar</packaging>
 
     <name>bootdo-demo</name>
@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.bootdo</groupId>
             <artifactId>bootdo-core</artifactId>
-            <version>1.6.9</version>
+            <version>1.7.0</version>
             <!--nested exception is java.lang.NoClassDefFoundError: com.fasterxml.jackson.core.JsonFactory.requiresPropertyOrdering()Z-->
             <exclusions>
                 <exclusion>
@@ -51,12 +51,21 @@
     </dependencies>
     <build>
         <plugins>
+            <!--此打包命令可跳过测试package -DskipTests-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <executable>true</executable>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
             </plugin>
         </plugins>
     </build>

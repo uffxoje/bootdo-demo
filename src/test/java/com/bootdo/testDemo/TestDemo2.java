@@ -16,5 +16,7 @@ import java.util.concurrent.TimeUnit;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TestDemo2 {
+    @Test
+    public void test(){}
 
 }
