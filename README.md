@@ -3,14 +3,27 @@
 
 把此项目复制过去，然后要改的地方如下：
 
-0，改pom.xml中groupId，artifactId，version
-1，改application的包名
-2，application类的组件扫描路径，Mybatis的mapper的包扫描路径，启动Logo字符
-3，改application.yml,application-dev.yml里mybatis: typeAliasesPackage:
-4，改READM.md
-5，改favicon.ico
-6，改login.html,main.html,index_v1.html
-7，login.html不要自动记住帐号和密码
+0，改pom.xml中groupId，artifactId，version。
+
+1，改application的包名。
+
+2，application类的组件扫描路径，Mybatis的mapper的包扫描路径，启动Logo字符。
+
+3，改application.yml,application-dev.yml里mybatis: typeAliasesPackage:。
+
+4，改READM.md。
+
+5，改favicon.ico。
+
+6，改login.html,main.html,index_v1.html。
+
+7，login.html不要自动记住帐号和密码。
+
+8，改代码生成器配置文件generator.properties的作者名，包名等，作者名不能用中文。
+
+核心包中已经有目录mybatis，内有mapper.xml文件，在demo项目中不可以再用mybatis目录来装mapper.xml文件，否则启动会找不到核心包中的mapper.xml。
+
+可以建立个mappers的目录来装mapper.xml文件，在application.yml的mybatis:mapper-locations:增加此目录，用逗号隔开，例如：mybatis:mapper-locations:mybatis/**/*Mapper.xml,mappers/**/*Mapper.xml。
 
 
 
